@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 20px; }
+
+.header {
+  width: 1210px;
+  height: 100px;
+  margin: 0 auto;
+  background: deepskyblue; }
+  .header .logo {
+    width: 100px;
+    height: 180px;
+    float: left; }
+    .header .logo a {
+      text-decoration: none; }
+      .header .logo a:hover {
+        color: #f00; }
+    .header .logo img {
+      width: 120px; }
+
+.aa {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.5); }
+
+.cc {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px; }
+
+.arrow1 {
+  border-style: solid;
+  border-width: 50px;
+  border-color: #ccc transparent transparent transparent;
+  width: 0; }
+
+.arrow2 {
+  border-style: solid;
+  border-width: 30px;
+  border-color: transparent #00f transparent transparent;
+  width: 0; }
+
+.dd, .ff {
+  width: 20px;
+  height: 20px; }
+
+.ff {
+  background: #ff0000; }
+
+.hh {
+  width: 20px;
+  height: 20px; }
+
+.ii {
+  width: 8px;
+  height: 3px; }
+
+.a5 {
+  width: 100px; }
+
+.a7 {
+  width: 140px; }
+
+.a9 {
+  width: 180px; }
+
+.error {
+  background: url("error.jpg"); }
+
+.wran {
+  background: url("wran.jpg"); }
+
+.right {
+  background: url("right.jpg"); }
+
+/*# sourceMappingURL=test.css.map */

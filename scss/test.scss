@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@import "common.scss";
+$color:#f00;
+
+
+body{
+  //background: $color;
+  width: 20px;
+}
+.header{
+  width: 1210px;
+  height: 100px;
+  margin:0 auto;
+  background: deepskyblue;
+  .logo{
+    width: 100px;
+    height: 180px;
+    float: left;
+    a{
+      text-decoration: none;
+      &:hover{
+        color:#f00;
+      }
+    }
+    img{
+      width: 120px;
+    }
+  }
+}
+@mixin border(){
+  border:1px solid #ccc;
+  box-shadow:0 0 3px 4px rgba(0,0,0,0.5);
+}
+.aa{
+  width: 200px;
+  height: 200px;
+  @include border();
+}
+@mixin css3($attr,$val){
+  -webkit-#{$attr}:$val;
+  -moz-#{$attr}:$val;
+  -o-#{$attr}:$val;
+  -ms-#{$attr}:$val;
+  #{$attr}:$val;
+}
+.cc{
+  @include css3(border-radius,30px);
+}
+@mixin arrow1($color,$width){
+  border-style:solid;
+  border-width:$width;
+  border-color: $color transparent transparent transparent;
+  width: 0;
+}
+.arrow1{
+  @include arrow1(#ccc,50px);
+}
+.arrow2{
+  @include arrow2(#00f,30px,left)
+}
+.dd{
+  width: 20px;
+  height: 20px;
+}
+.ff{
+  @extend .dd;
+  background: #ff0000;
+}
+%gg{
+  width: 20px;
+  height: 20px;
+}
+.hh{
+  @extend %gg;
+}
+@function add($x,$y){
+  @return $x+$y;
+}
+.ii{
+  width: add(3,5px);
+  height: (6px / 2);
+}
+$j:5;
+@while($j<10){
+  .a#{$j}{
+    width: 20px*$j;
+  }
+  $j:$j+2;
+}
+
+$icon:error wran right;
+@each $val in $icon{
+  .#{$val}{
+    background: url('#{$val}.jpg');
+  }
+}
+

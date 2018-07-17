@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@mixin arrow2($color,$width,$trans){
+  border-style:solid;
+  border-width:$width;
+  border-color: transparent $color transparent transparent;
+  width: 0;
+}
